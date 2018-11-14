@@ -1,0 +1,86 @@
+
+.grid{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas: 
+        'nav nav nav nav'
+        'main main main main'  
+    
+        
+        'footer footer footer footer';
+    font-family: 'Raleway', sans-serif;
+
+}
+        
+            .grid > div{
+            padding: 1em;
+            }
+
+            .nav{
+            grid-area: nav;
+            vertical-align: inherit;
+            font-family: 'Raleway', sans-serif;
+                
+            }
+            
+           .main {
+                grid-area: main;
+                background-color:#ef9409;
+            }
+            
+            .aside {
+                grid-area: aside;
+                background-color:skyblue;
+            }
+            
+            .hlesson {
+                grid-area: hlesson;
+                background-color:mediumaquamarine;
+            }
+            
+            .hoverview {
+                grid-area: hoverview;
+                background-color:antiquewhite;
+            }
+            
+            .hpartners {
+                grid-area: hpartners;
+                background-color:deeppink;
+            }
+
+.component-row {
+	height: 200px;
+	text-align: center;
+}
+
+.component-col {
+	color: white;
+	background-color: #9e1e21;
+	margin: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.component-col:hover {
+	background-color: #2E0000;
+}
+
+#play {
+    height: 50px;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    
+
+}
+
+.modal-title {
+	font-family: "Oswald", Helvetica, sans-serif;
+	margin: auto;
+}
+
+.modal-body {
+	padding: 40px;
+}
