@@ -14,14 +14,14 @@
       
       <link rel='icon' href='images/favicon.svg' type='image/svg' >
 
-    <title>Curriculum | Blockchaincademy</title>
+    <title>Edit profile | Blockchaincademy</title>
   </head>
     
   <body>
       
         <div class="grid">
             
-             <div class="nav">
+            <div class="nav">
                  <!--Navbar-->
                   <nav class="w-100 navbar navbar-expand-sm navbar-light " >
               <div>
@@ -163,39 +163,65 @@
                     </div>
             </nav>     
     
-                </div>
+                
       <!--/.Navbar--> 
+            </div>
             
             
-            
-            <div class="main"><h1>Curriculum</h1>
-            
-                <p>Blockchaincademy breaks down the lessons into six categories: </p>
-                
+            <div class="container">
+    <h1>Edit profile</h1>
+  	<hr>
+	<div class="row">
+      <!-- left column -->
+      <div class="col-md-3">
+        <div class="text-center">
+          <img src="//placehold.it/100" class="avatar img-circle" alt="avatar">
+          <h6>Upload your photo</h6>
+          
+          <input type="file" class="form-control">
+        </div>
+      </div>
+      
+      <!-- edit form column -->
+      <div class="col-md-9 personal-info">
+       
+          
+        <form class="form-horizontal" role="form">
+          <div class="form-group">
+            <label class="col-lg-3 control-label">First name</label>
+            <div class="col-lg-8">
+              <input class="form-control" type="text" value="Zoey">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-lg-3 control-label">Last name</label>
+            <div class="col-lg-8">
+              <input class="form-control" type="text" value="Ren">
+            </div>
+          </div>
 
- <div id="components" class="container">
-    <div class="row component-row">
-      <div class="col-sm component-col rounded" id="component1" data-toggle="modal" data-target="#component1modal">Intro to blockchain</div>
-      <div class="col-sm component-col rounded" id="component2" data-toggle="modal" data-target="#component2modal">Trading & investing</div>
-    </div>
-
-    <div class="row component-row">
-              <div class="col-sm component-col rounded" id="component3" data-toggle="modal" data-target="#component3modal">Popular blockchains</div>
-
-      <div class="col-sm component-col rounded" id="component4" data-toggle="modal" data-target="#component4modal">Infrastructure</div>
-         </div>
-             <div class="row component-row">
-      <div class="col-sm component-col rounded" id="component5" data-toggle="modal" data-target="#component5modal">Economics</div>
-      <div class="col-sm component-col rounded" id="component6" data-toggle="modal" data-target="#component6modal">Blockchain applications</div>
-                 </div>
-                
-             <div class="row component-row">
-                    <button type="button" id="play" class="btn btn-primary btn-lg" data-toggle="button" aria-pressed="false" autocomplete="off">Play now!</button>
-     </div>
-                </div>
+            <div class="form-group">
+            <label class="col-md-3 control-label">User name</label>
+            <div class="col-md-8">
+              <input class="form-control" type="text" value="ZoeyRen">
+            </div>
+          </div>
+       
             
-            
-          <!-- FOOTER START -->
+          <div class="form-group">
+            <label class="col-md-3 control-label"></label>
+            <div class="col-md-8">
+              <a href="dashboard.html"><input type="button" class="btn btn-primary" value="Save Changes"></a>
+              <span></span>
+              <input type="reset" class="btn btn-default" value="Cancel">
+            </div><div class="container"></div>
+          </div>
+        </form>
+      </div>
+  </div>
+</div>
+<hr>
+            <!-- FOOTER START -->
                     <div class="footer">
                       <div class="contain">
                       <div class="col">
@@ -228,13 +254,8 @@
                 
         
         </div>
-      
-      </div>
-      
-      
-        
-      
 
+      
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
