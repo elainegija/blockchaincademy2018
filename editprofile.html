@@ -8,44 +8,50 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
       <link rel="stylesheet" href="style.css">
-      <link rel="stylesheet" href="editprofilestyle.css">
+      <link rel="stylesheet" href="curriculumstyle.css">
            
       <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-<link rel='icon' href='images/favicon.svg' type='image/svg' >
       
-    <title>Edit your profile | Blockchaincademy</title>
+      <link rel='icon' href='images/favicon.svg' type='image/svg' >
+
+    <title>Edit profile | Blockchaincademy</title>
   </head>
     
   <body>
       
-                  <!--Navbar-->
+        <div class="grid">
+            
             <div class="nav">
-                 
+                 <!--Navbar-->
                   <nav class="w-100 navbar navbar-expand-sm navbar-light " >
               <div>
-                  <a class="navbar-brand" href="#">
-                      <img src="images/logo.png" width="300px" class="d-inline-block align-top" alt="">
-                  </a>
+                      <a class="navbar-brand" href="#">
+    <img src="images/logo.png" width="60px" class="d-inline-block align-top" alt=""> </a>
+                  
+                 </div> 
+                      
+            <div id="hide">
+                 <a class="navbar-brand" href="#"> <img src="images/word.png" width="150px" class="d-inline-block align-top"  alt="">   
+                </a>
                       </div>
+                      
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
-
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                   <li class="nav-item active">
                     <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                   </li>
-                  <li class="nav-item active">
+                  <li class="nav-item">
                     <a class="nav-link" href="#">
                       Curriculum
                     </a>
-                    </li>
-                <li class="nav-item active">
+                <li class="nav-item">
                     <a class="nav-link" href="#">Forum</a>
                   </li>
-                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Contact</a>
+                 <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Contact</a>
                   </li>
                 </ul>
               </div>
@@ -54,36 +60,116 @@
                       <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
                       <div class="modal-dialog modal-lg">
                         <div class="modal-content">
-                       <!-- THIS IS THE LOGIN-->
+<!-- THIS IS THE LOGIN-->
                             
-<div id="login-box">
-    <div class="left">
-        <h1>Sign up</h1>
-
-        <input type="text" name="username" placeholder="Username" />
-        <input type="email" name="email" placeholder="E-mail" />
-        <input type="number" name="ph_no" placeholder="Phone Number" />
-        <input type="password" name="password" placeholder="Type password" />
-
-        <input type="submit" name="signup_submit" value="Sign me up" />
-    </div>
-
+      <div class="col-xs-12">
+        <div class="form-body">
+          <ul class="nav nav-tabs final-login">
+            <li id="login-tab" class="active head-login"><a data-toggle="tab" href="#login2">login</a></li>
+            <li id="register-tab" class="head-register"><a data-toggle="tab" href="#register2">register</a></li>
+          </ul>
+          <div class="tab-content">
+            <div id="login2" class="tab-pane active">
+              <div class="form-wrapper">
+                <form class="login" action="" method="post">
+                  <div class="form-group accaunt-name">
+    
+                    <input type="text" class="form-control" id="accauntName" placeholder="Your Email">
+                    <span class="fa fa-user"></span>
+                  </div>
+                  <!-- .form-group accaunt-name -->
+                  <div class="form-group accaunt-password">
+                    
+                    <input type="password" class="form-control" id="accauntPassword" placeholder="Create Your Password">
+                    <span class="fa fa-lock"></span>
+                  </div>
+                 
+                  <div class="checkbox checkbox-main">
+                    <input id="checkbox-login2" type="checkbox">
+                    <label for="checkbox-login2">
+                   Remember me
+                                        </label>
+                  </div>
+                  <button type="submit" class="btn btn-lgn">Login</button>
+                  <span class="or text-center"><a href="#">Register | Lost your password?</a></span>
+                  <div class="clearfix"></div>
+                </form>
+              </div>
+              <div class="social-login">
+                <span class="text-center">Or login with</span>
+                  
+                  
+                <ul>
+                  <li class="btn-group split-left facebook">
+                   <link rel='icon' href='favicon.ico' type='image/x-icon'/ >
+                    <button type="button" class="btn btn-sm">Facebook</button>
+                  </li>
+                    
+                  <li class="btn-group split-left twitter-plus">
+                 
+                    <button type="button" class="btn btn-sm">Twitter</button>
+                  </li>
+                </ul>
+                  
+                  
+              </div>
+            </div>
+            <div id="register2" class="tab-pane fade">
+              <div class="form-wrapper">
+                <form class="register" method="post">
+                  <div class="form-group accaunt-name">
+                    
+                    <input type="text" class="form-control" id="accauntName" placeholder="Your Email">
+                    <span class="fa fa-user"></span>
+                  </div>
+                  <div class="form-group accaunt-email">
+                    
+                    <input type="email" class="form-control" id="accauntEmail" placeholder="Your Password">
+                    <span class="fa fa-envelope"></span>
+                  </div>
+                  <button type="submit" class="btn btn-rgstr">Register</button>
+                  <span class="or text-center"><a data-toggle="tab" href="#login">Log in | Lost your password?</a></span>
+                 
+                </form>
+              </div>
+              <div class="social-login">
+                <span class="text-center">Or connect with</span>
+                <ul>
+                  <li class="btn-group split-left facebook">
+                    <button type="button" class="btn btn-sm">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+                                        </button>
+                    <button type="button" class="btn btn-sm">Facebook</button>
+                  </li>
+                  <li class="btn-group split-left twitter-plus">
+                    <button type="button" class="btn btn-sm">
+                <i class="fa fa-twitter-plus" aria-hidden="true"></i>
+                                        </button>
+                    <button type="button" class="btn btn-sm">Twitter</button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="uparrow"></div>
+        </div>
+      </div>
                             
-                 <!--THIS IS THE END OF THE LOGIN-->           
+ <!--THIS IS THE END OF THE LOGIN-->           
                             
                             
                         </div>
                       </div>
                     </div>
-
             </nav>     
     
-                </div>
+                
       <!--/.Navbar--> 
+            </div>
             
-      
-<div class="container">
-    <h1>Edit Profile</h1>
+            
+            <div class="container">
+    <h1>Edit profile</h1>
   	<hr>
 	<div class="row">
       <!-- left column -->
@@ -98,8 +184,8 @@
       
       <!-- edit form column -->
       <div class="col-md-9 personal-info">
-                
-
+       
+          
         <form class="form-horizontal" role="form">
           <div class="form-group">
             <label class="col-lg-3 control-label">First name</label>
@@ -120,22 +206,21 @@
               <input class="form-control" type="text" value="ZoeyRen">
             </div>
           </div>
-
-            <div class="form-group">
+       
+            
+          <div class="form-group">
             <label class="col-md-3 control-label"></label>
             <div class="col-md-8">
-              <input type="button" class="btn btn-primary" value="Save Changes">
+              <a href="dashboard.html"><input type="button" class="btn btn-primary" value="Save Changes"></a>
               <span></span>
               <input type="reset" class="btn btn-default" value="Cancel">
-            </div>
+            </div><div class="container"></div>
           </div>
         </form>
       </div>
   </div>
 </div>
 <hr>
-      
-      
             <!-- FOOTER START -->
                     <div class="footer">
                       <div class="contain">
@@ -144,10 +229,8 @@
                         <ul>
                           <li>About</li>
                           <li>Curriculum</li>
-                          <li>Services</li>
+                        
                         </ul>
-                      </div>
-                      <div class="col">
                       </div>
                  
                       <div class="col">
@@ -162,7 +245,6 @@
                         <ul>
                           <li><img src="https://svgshare.com/i/5fq.svg" width="32" style="width: 32px;"></li>
                           <li><img src="https://svgshare.com/i/5eA.svg" width="32" style="width: 32px;"></li>
-                          <li><img src="https://svgshare.com/i/5f_.svg" width="32" style="width: 32px;"></li>
                         </ul>
                       </div>
                     <div class="clearfix"></div>
@@ -172,9 +254,8 @@
                 
         
         </div>
-      
-    
 
+      
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
