@@ -1,4 +1,3 @@
-$(".email-signup").hide();
 $("#signup-box-link").click(function(){
   $(".email-login").fadeOut(100);
   $(".email-signup").delay(100).fadeIn(100);
@@ -11,6 +10,20 @@ $("#login-box-link").click(function(){
   $("#login-box-link").addClass("active");
   $("#signup-box-link").removeClass("active");
 });
+
+
+// Selecting tabs highlights correct tab
+$("#register-tab").click(function(){
+    $(this).addClass("active");
+    $("#login-tab").removeClass("active");
+});
+
+$("#login-tab").click(function(){
+    $(this).addClass("active");
+    $("#register-tab").removeClass("active");
+});
+
+
 
 
 (function(){
