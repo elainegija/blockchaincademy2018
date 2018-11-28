@@ -19,33 +19,37 @@
       
         <div class="grid">
 <!-- navbar-->
-            
-            <div class="nav">
-                <nav class="w-100 navbar navbar-expand-sm navbar-light " >
-                    <div>
+                <div class="nav">
+                 <!--Navbar-->
+                  <nav class="w-100 navbar navbar-expand-sm navbar-light " >
+              <div>
                       <a class="navbar-brand" href="#">
-    <img src="images/logo.png" width="300px" class="d-inline-block align-top" alt="">
-  </a>
+    <img src="images/logo.png" width="60px" class="d-inline-block align-top" alt=""> </a>
+                  
+                 </div> 
+                      
+            <div id="hide">
+                 <a class="navbar-brand" href="#"> <img src="images/word.png" width="150px" class="d-inline-block align-top"  alt="">   
+                </a>
                       </div>
+                      
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
-
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                   <ul class="navbar-nav mr-auto">
+                <ul class="navbar-nav mr-auto">
                   <li class="nav-item active">
                     <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                   </li>
-                  <li class="nav-item active">
+                  <li class="nav-item">
                     <a class="nav-link" href="#">
                       Curriculum
                     </a>
-                    </li>
-                <li class="nav-item active">
+                <li class="nav-item">
                     <a class="nav-link" href="#">Forum</a>
                   </li>
-                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Contact</a>
+                 <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Contact</a>
                   </li>
                 </ul>
               </div>
@@ -54,52 +58,119 @@
                       <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
                       <div class="modal-dialog modal-lg">
                         <div class="modal-content">
- 
+<!-- THIS IS THE LOGIN-->
                             
+      <div class="col-xs-12">
+        <div class="form-body">
+          <ul class="nav nav-tabs final-login">
+            <li id="login-tab" class="active head-login"><a data-toggle="tab" href="#login2">login</a></li>
+            <li id="register-tab" class="head-register"><a data-toggle="tab" href="#register2">register</a></li>
+          </ul>
+          <div class="tab-content">
+            <div id="login2" class="tab-pane active">
+              <div class="form-wrapper">
+                <form class="login" action="" method="post">
+                  <div class="form-group accaunt-name">
+    
+                    <input type="text" class="form-control" id="accauntName" placeholder="Your Email">
+                    <span class="fa fa-user"></span>
+                  </div>
+                  <!-- .form-group accaunt-name -->
+                  <div class="form-group accaunt-password">
+                    
+                    <input type="password" class="form-control" id="accauntPassword" placeholder="Create Your Password">
+                    <span class="fa fa-lock"></span>
+                  </div>
+                 
+                  <div class="checkbox checkbox-main">
+                    <input id="checkbox-login2" type="checkbox">
+                    <label for="checkbox-login2">
+                   Remember me
+                                        </label>
+                  </div>
+                  <button type="submit" class="btn btn-lgn">Login</button>
+                  <span class="or text-center"><a href="#">Register | Lost your password?</a></span>
+                  <div class="clearfix"></div>
+                </form>
+              </div>
+              <div class="social-login">
+                <span class="text-center">Or login with</span>
+                  
+                  
+                <ul>
+                  <li class="btn-group split-left facebook">
+                   <link rel='icon' href='favicon.ico' type='image/x-icon'/ >
+                    <button type="button" class="btn btn-sm">Facebook</button>
+                  </li>
+                    
+                  <li class="btn-group split-left twitter-plus">
+                 
+                    <button type="button" class="btn btn-sm">Twitter</button>
+                  </li>
+                </ul>
+                  
+                  
+              </div>
+            </div>
+            <div id="register2" class="tab-pane fade">
+              <div class="form-wrapper">
+                <form class="register" method="post">
+                  <div class="form-group accaunt-name">
+                    
+                    <input type="text" class="form-control" id="accauntName" placeholder="Your Email">
+                    <span class="fa fa-user"></span>
+                  </div>
+                  <div class="form-group accaunt-email">
+                    
+                    <input type="email" class="form-control" id="accauntEmail" placeholder="Your Password">
+                    <span class="fa fa-envelope"></span>
+                  </div>
+                  <button type="submit" class="btn btn-rgstr">Register</button>
+                  <span class="or text-center"><a data-toggle="tab" href="#login">Log in | Lost your password?</a></span>
+                 
+                </form>
+              </div>
+              <div class="social-login">
+                <span class="text-center">Or connect with</span>
+                <ul>
+                  <li class="btn-group split-left facebook">
+                    <button type="button" class="btn btn-sm">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+                                        </button>
+                    <button type="button" class="btn btn-sm">Facebook</button>
+                  </li>
+                  <li class="btn-group split-left twitter-plus">
+                    <button type="button" class="btn btn-sm">
+                <i class="fa fa-twitter-plus" aria-hidden="true"></i>
+                                        </button>
+                    <button type="button" class="btn btn-sm">Twitter</button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="uparrow"></div>
+        </div>
+      </div>
                             
-                            <!-- THIS IS THE LOGIN-->
-                            
-<div id="login-box">
-    <div class="left">
-        <h1>Sign up</h1>
-
-        <input type="text" name="username" placeholder="Username" />
-        <input type="email" name="email" placeholder="E-mail" />
-        <input type="number" name="ph_no" placeholder="Phone Number" />
-        <input type="password" name="password" placeholder="Type password" />
-
-        <input type="submit" name="signup_submit" value="Sign me up" />
-    </div>
-
-    <div class="right">
-        <span class="loginwith">Sign Up with<br />social network</span>
-        <button class="social-signin facebook">Sign up with Facebook</button>
-        <button class="social-signin twitter">Sign up with Twitter</button>
-        <button class="social-signin google">Sign up with Google+</button>
-    </div>
-    <div class="or">OR</div>
-</div>
-
-                            
-                 <!--THIS IS THE END OF THE LOGIN-->           
+ <!--THIS IS THE END OF THE LOGIN-->           
                             
                             
                         </div>
                       </div>
                     </div>
-
             </nav>     
-    
-                
-      <!--/.Navbar--> 
             </div>
-            <div class="dash1">
+      <!--/.Navbar--> 
+ <div class="dash1">
                 <div class="profilecontainer">
-                    <div class="userimg"><img src="images/user.png" width="40"></div>
+                    <div class="userimg">
+  
+<a href="editprofile.html"><img src="images/user.png" width="40"></a></div>
                 </div>
             </div>
             <div class="dash2">
-                <div class="username"><b>ZoeyRen</b></div>
+                <div class="username"><a href="editprofile.html"><b>ZoeyRen</b></a></div>
                 <div class="userrole">Newbie</div>
             </div>
             <div class="dash3">
@@ -112,7 +183,6 @@
                 <h4>0</h4>
                 <p>badges</p>
             </div>
-      
                         
             <div class="hlesson">
                 <h2> Your progress</h2>
@@ -164,8 +234,7 @@
             </div>
             <div class="hpartners">HpgPartners</div>
           
-
-                    <!-- FOOTER START -->
+<!-- FOOTER START -->
                     <div class="footer">
                       <div class="contain">
                       <div class="col">
@@ -173,11 +242,8 @@
                         <ul>
                           <li>About</li>
                           <li>Curriculum</li>
-                          <li>Services</li>
+                        
                         </ul>
-                      </div>
-                      <div class="col">
-
                       </div>
                  
                       <div class="col">
@@ -192,14 +258,14 @@
                         <ul>
                           <li><img src="https://svgshare.com/i/5fq.svg" width="32" style="width: 32px;"></li>
                           <li><img src="https://svgshare.com/i/5eA.svg" width="32" style="width: 32px;"></li>
-                          <li><img src="https://svgshare.com/i/5f_.svg" width="32" style="width: 32px;"></li>
                         </ul>
                       </div>
                     <div class="clearfix"></div>
                     </div>
                     </div>
                     <!-- END OF FOOTER -->
-                
+            
+            
    
       
       
