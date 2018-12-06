@@ -1,10 +1,3 @@
-.profilecontainer {
-    float: right;
-}
-
-.progress-bar {
-    text-align: center;
-}
 
 .grid{
     display: grid;
@@ -12,17 +5,17 @@
     grid-template-rows: repeat(5, auto);
     grid-template-areas: 
         'nav nav nav nav'
-        'dash1 dash2 dash3 dash4'  
+        'dashboard dashboard dashboard dashboard'
         'hlesson hlesson hlesson hlesson' 
         'hoverview hoverview hoverview hoverview' 
-        'hpartners hpartners hpartners hpartners'
+        
         'footer footer footer footer';
     font-family: 'Raleway', sans-serif;
 
 }
         
             .grid > div{
-            padding: 1em;
+            margin: 1em;
             }
 
             .nav{
@@ -34,26 +27,78 @@
             
            .main {
                 grid-area: main;
-                background-color:#ef9409;
+
             }
             
-            .aside {
-                grid-area: aside;
-                background-color:skyblue;
+            .dashboard {
+                grid-area: dashboard;
+                
             }
             
             .hlesson {
                 grid-area: hlesson;
-                background-color:mediumaquamarine;
+                
             }
             
             .hoverview {
                 grid-area: hoverview;
-                background-color:antiquewhite;
+            margin: 1em;
             }
             
             .hpartners {
                 grid-area: hpartners;
-                background-color:deeppink;
+                
             }
 
+.profilecontainer img {
+ height: 60px;
+    
+}
+
+.progress {
+    height: 5em;
+    background-color: #fafafa;
+    
+    margin: .5em;
+
+}
+
+#progtop {
+    color: white;
+    background-color: #71c5ff;
+}
+
+#prog1 {
+    color: white;
+}
+
+.progress-bar {
+    
+    font-size: 1.5em;
+    color: black;
+    padding-left: 1.1em;
+    
+}
+
+.list-group .active {
+    background-color: #1186c5;
+}
+
+#prog1, prog4 {
+    background-color: #907ad6;
+ 
+}
+
+#prog2, prog5 {
+
+    background-color: #dabfff;
+}
+
+#prog3, prog6 {
+    background-color: #71c5ff;
+}
+
+
+.container {
+    padding: 2em;
+}

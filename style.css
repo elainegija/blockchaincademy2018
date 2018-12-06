@@ -35,27 +35,27 @@
             
            .main {
                 grid-area: main;
-                background-color:#ef9409;
+
             }
             
             .aside {
                 grid-area: aside;
-                background-color:skyblue;
+                
             }
             
             .hlesson {
                 grid-area: hlesson;
-                background-color:mediumaquamarine;
+                
             }
             
             .hoverview {
                 grid-area: hoverview;
-                background-color:antiquewhite;
+                
             }
             
             .hpartners {
                 grid-area: hpartners;
-                background-color:deeppink;
+                
             }
 
 

@@ -26,29 +26,9 @@
             
            .main {
                 grid-area: main;
-                background-color:#ef9409;
+             margin: 1em;   
             }
             
-            .aside {
-                grid-area: aside;
-                background-color:skyblue;
-            }
-            
-            .hlesson {
-                grid-area: hlesson;
-                background-color:mediumaquamarine;
-            }
-            
-            .hoverview {
-                grid-area: hoverview;
-                background-color:antiquewhite;
-            }
-            
-            .hpartners {
-                grid-area: hpartners;
-                background-color:deeppink;
-            }
-
 .component-row {
 	height: 200px;
 	text-align: center;
@@ -56,7 +36,7 @@
 
 .component-col {
 	color: white;
-	background-color: #9e1e21;
+	background-color: #907ad6;
 	margin: 20px;
 	display: flex;
 	align-items: center;
@@ -64,7 +44,7 @@
 }
 
 .component-col:hover {
-	background-color: #2E0000;
+	background-color: #3b4a99;
 }
 
 #play {
