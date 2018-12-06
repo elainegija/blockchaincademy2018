@@ -1,28 +1,27 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Dashboard | Blockchaincademy </title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-
-          <link rel="stylesheet" href="style.css">
-      <link rel="stylesheet" href="dashboardstyle.css">
-
+      <link rel="stylesheet" href="style.css">
+     
+           
       <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 
-    <link rel='icon' href='images/favicon.png' type='image/png' >
+    <title>Blockcademy</title>
   </head>
-  <body> 
+  <body>
+      
       
         <div class="grid">
-<!-- navbar-->
-                <div class="nav">
+            
+            <div class="nav">
                  <!--Navbar-->
-                  <nav class="w-100 navbar navbar-expand-sm navbar-light " >
+                  <nav class="w-100 navbar navbar-expand-sm navbar-light" >
               <div>
                       <a class="navbar-brand" href="#">
     <img src="images/logo.png" width="60px" class="d-inline-block align-top" alt=""> </a>
@@ -30,7 +29,7 @@
                  </div> 
                       
             <div id="hide">
-                 <a class="navbar-brand" href="#"> <img src="images/word.png" width="150px" class="d-inline-block align-top"  alt="">   
+                 <a class="navbar-brand" href="#"> <img src="images/word.png" width="150px" class="d-inline-block align-top">   
                 </a>
                       </div>
                       
@@ -54,6 +53,8 @@
                   </li>
                 </ul>
               </div>
+                      <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target=".bd-example-modal-lg" >Login/Register</button>
+                      
                       <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
                       <div class="modal-dialog modal-lg">
                         <div class="modal-content">
@@ -159,81 +160,51 @@
                       </div>
                     </div>
             </nav>     
-            </div>
+    
+                
       <!--/.Navbar--> 
- <div class="dash1">
-                <div class="profilecontainer">
-                    <div class="userimg">
-  
-<a href="editprofile.html"><img src="images/user.png" width="40"></a></div>
+            
+            <div class="grid-container">
+  <div class="grid-item" id="main">
+     <img src="images/adult-agreement-arms-1270949.jpg" alt="Stock photo of something" width="100%" />
                 </div>
-            </div>
-            <div class="dash2">
-                <div class="username"><a href="editprofile.html"><b>ZoeyRen</b></a></div>
-                <div class="userrole">Newbie</div>
-            </div>
-            <div class="dash3">
-                
-                <h4>10</h4>
-                <p>points</p>
-            </div>
-            <div class="dash4">
-                
-                <h4>0</h4>
-                <p>badges</p>
-            </div>
-                        
-            <div class="hlesson">
-                <h2> Your progress</h2>
-<div class="progress">
-  <div class="progress-bar" role="progressbar" style="width: 20%;" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">20%</div></div>
-            <div class="container">
-  <h2>Intro to blockchain</h2>
-  <div class="list-group">
-    <a href="#" class="list-group-item">What is a blockchain?</a>
-    <a href="#" class="list-group-item active">What is Bitcoin?</a>
-    <a href="#" class="list-group-item disabled">Distributed ledger technology</a>
-      <a href="#" class="list-group-item disabled">How cryptocurrency transactions work</a>
-      <a href="#" class="list-group-item disabled">The different types of digital tokens</a>
+  <div class="grid-item" id="aside">
+<form action="action_page.php">
+  <div class="homeregristrationr">
+    <h1>Register</h1>
+    <p>Please fill in this form to create an account.</p>
+    <hr>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <label for="psw-repeat"><b>Repeat Password</b></label>
+    <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+    <hr>
+
+    <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+    <button type="submit" class="registerbtn">Register</button>
   </div>
+
+  <div class="container signin">
+    <p>Already have an account? <a href="#">Sign in</a>.</p>
+  </div>
+</form>
+                </div>
+                </div>   
 </div>
-             
-                
-            
+            <div class="hlesson">
+            <iframe width=100% height="402" src="https://www.youtube.com/embed/Bp2A8Tlk-tQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
-            <div class="hoverview"><h2>Your Road Map</h2>
-            
-                        <div class="progress">
-  <div class="progress-bar bg-success" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">Intro to blockchain 20%</div>
-</div>
-<div class="progress">
-  <div class="progress-bar bg-info" role="progressbar" style="width: 1%" aria-valuenow="1" aria-valuemin="0" aria-valuemax="100">Trading + Investing 0%</div>
-</div>
-<div class="progress">
-  <div class="progress-bar bg-warning" role="progressbar" style="width: 1%" aria-valuenow="1" aria-valuemin="0" aria-valuemax="100">Popular blockchains 0%</div>
-</div>
-<div class="progress">
-  <div class="progress-bar bg-danger" role="progressbar" style="width: 1%" aria-valuenow="1" aria-valuemin="0" aria-valuemax="100">Infrastructure 0%</div>
-</div>
-                        <div class="progress">
-  <div class="progress-bar bg-success" role="progressbar" style="width: 1%" aria-valuenow="1" aria-valuemin="0" aria-valuemax="100">Economics 0%</div>
-</div>
-<div class="progress">
-  <div class="progress-bar bg-info" role="progressbar" style="width: 1%" aria-valuenow="1" aria-valuemin="0" aria-valuemax="100">Blockchain applications 0%</div>
-</div>
-<div class="progress">
-  <div class="progress-bar bg-warning" role="progressbar" style="width: 1%" aria-valuenow="1" aria-valuemin="0" aria-valuemax="100">Coding 0%</div>
-</div>
-         
-            
-            
-            
-            
-            
-            </div>
-            <div class="hpartners">HpgPartners</div>
           
-<!-- FOOTER START -->
+            <div class="hpartners">HpgPartners</div>
+
+        
+        
+      <!-- FOOTER START -->
                     <div class="footer">
                       <div class="contain">
                       <div class="col">
@@ -263,20 +234,37 @@
                     </div>
                     </div>
                     <!-- END OF FOOTER -->
-            
-            
-      </div>
-      
-      
-      
+                
       
       
     <!-- THIS WAS IN THE ORIGINAL BLOCKCHAIN CODE I DOWNLOADED THAT WAS SHARED IN TRELLO--Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!--<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>-->
+    
+    
   </body>
 </html>
 
+<!--THIS IS OLIVIA'S DRAFT WORK FOR HER REFERENCE. DO NOT REMOVE-->
+<!--
+            <div class="row">
+                     <div class="col-6">Main</div>
+                    <div class="col-6">Mainside</div>
+            </div>
+            <div class="row">
+            <div class="col-12">ç</div>
+            </div>
+            <div class="row">
+            <div class="col-12">HpgOverview</div>
+            </div>
+-->
+<!--
+            <div class="main">Main</div>
+            <div class="aside">Mainside</div>
+            <div class="hlesson">Hpglesson</div>
+            <div class="hoverview">HpgOverview</div>
+            <div class="hpartners">HpgPartners</div>
+-->
 
