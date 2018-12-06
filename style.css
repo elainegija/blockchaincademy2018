@@ -1,4 +1,3 @@
-
 .logopadding {
     margin: 10px;
 }
@@ -7,40 +6,37 @@
     background-color:#fff;
 }
 
-.grid{
-    display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: repeat(5, auto);
-    grid-template-areas: 
-        'nav nav nav nav'
-        'main main aside aside'  
-        'hlesson hlesson hlesson hlesson' 
-        'hoverview hoverview hoverview hoverview' 
-        'hpartners hpartners hpartners hpartners'
-        'footer footer footer footer';
-    font-family: 'Raleway', sans-serif;
-
+.grid-container {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-areas: 
+      "nav nav"
+	  "main aside"
 }
-        
-            .grid > div{
-            padding: 1em;
-            }
 
-            .nav{
+.grid-item {
+  font-size: 30px;
+  text-align: center;
+}
+
+          
+
+            #nav{
             grid-area: nav;
             vertical-align: inherit;
             font-family: 'Raleway', sans-serif;
                 
             }
             
-           .main {
-                grid-area: main;
-                background-color:#ef9409;
+           #main {
+            background-color: #ef9409;
+            grid-area: main;   
             }
             
-            .aside {
+            #aside {
                 grid-area: aside;
-                background-color:skyblue;
+				font-size: 10pt;
+				
             }
             
             .hlesson {
@@ -57,7 +53,254 @@
                 grid-area: hpartners;
                 background-color:deeppink;
             }
+            
+.titleContainer__2kdrhe6ZWYZpBOZ88grjVL
+{
+	background-color: #6400e4;
+	padding: 2rem;
+    padding-top: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 1rem;
+    padding-left: 5rem;
+	position: absolute;
+	left: -2rem;
+	top: 38%;
+	transform: translateY(-50%);
+	z-index: 2;
+	box-sizing: border-box;
+	color: white;
+	font-family: 'Raleway', sans-serif;
+}
 
+
+.form-body {
+    background-color: #fff;
+    position: relative;
+    width: 100%;
+    padding: 40px;
+    text-align: center;
+    border-radius: 6px;
+}
+.final-login {
+    border-bottom: 0;
+    padding-top: 30px;
+    padding-bottom: 0px;
+    text-align: center;
+}
+.final-login li{
+    width:50%;
+}
+.head-login a {
+    text-align: center;
+}
+.head-register a {
+    text-align: center;
+}
+.final-login li a {
+    text-align: center;
+    color: #000;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 4px;
+    font-size: 17px;
+}
+.nav-tabs>li.active>a, 
+.nav-tabs>li.active>a:focus, 
+.nav-tabs>li.active>a:hover {
+    border: 0;
+}
+.final-login li:not(.active) a {
+    color: #bababa;
+}
+.nav>li>a:hover {
+    background-color: transparent;
+}
+.nav-tabs>li>a:hover {
+    border-color: transparent;
+}
+form {
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: center;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    background-color: #fff;
+}
+.register {
+    height: 256px;
+}
+.form-control {
+    border: 2px solid #ccc;
+    color: #222;
+}
+.form-control::placeholder {
+    color: #ccc !important;
+}
+.form-control:focus {
+    border: 2px solid #f77750 !important;
+}
+.form-control {
+    padding: 10px;
+    padding-left: 10px;
+    color: #ff764c !important;
+}
+.accaunt-name {
+    margin-bottom: 3px !important; 
+} 
+.accaunt-email {
+    margin-bottom: 11px;
+}
+input {
+    box-shadow: none!important;
+}
+input::-webkit-input-placeholder {
+    text-shadow: none;
+}
+label {
+    color: #989898;
+}
+span.fa {
+    position: relative;
+    left: 15px;
+}
+.checkbox input[type="checkbox"] {
+    opacity: 0;
+}
+.checkbox input[type="checkbox"]:checked + label::after {
+    font-family: 'FontAwesome';
+    content: "\f00c"; 
+}
+.checkbox-main {
+    margin-top: -16px !important;
+    text-align: left;
+}
+.checkbox-main input[type="checkbox"]:checked + label::before {
+    background-color: #f77750;
+    border-color: #f77750; 
+}
+.checkbox-main input[type="checkbox"]:checked + label::after {
+    color: #fff; 
+        text-align: center;
+}
+.checkbox label::before {
+    content: "";
+    display: inline-block;
+    position: relative;
+    width: 20px;
+    height: 20px;
+    left: 0;
+    margin-top: 15px;
+    margin-right: 5px;
+    border: 2px solid #ccc;
+    border-radius: 3px;
+    background-color: #fff;
+    -webkit-transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
+    -o-transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
+    transition: border 0.15s ease-in-out, color 0.15s ease-in-out; 
+}
+.checkbox label::after {
+    display: inline-block;
+    position: relative;
+    width: 18px;
+    height: 18px;
+    left: 19px;
+    top: -3px;
+    margin-left: -20px;
+    padding-left: 3px;
+    padding-top: 1px;
+    font-size: 17px;
+    color: #555555;
+}
+button {
+    color: #fff;
+}
+.btn-lgn {
+    background-color: #f77750 !important;
+    color: #fff;
+    padding: 6px 60px !important;
+}
+.btn:hover {
+    color: #fff;
+}
+.btn-rgstr {
+    background-color: #ff764c !important;
+    color: #fff;
+    padding: 6px 60px !important;
+}
+.or {
+    display: block;
+    padding-top: 19px;
+}
+.or a {
+    color: #000;
+}
+.social-login {
+    padding-left: 0px;
+    padding-right: 0px;
+    border-top: 1px solid #ccc;
+}
+.social-login span {
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-weight: 700;
+}
+.social-login ul {
+    text-align: center;
+}
+.block ul {
+    padding-bottom: 50px;
+    text-align: center;
+}
+.social-login ul li:last-of-type {
+    float: center;
+}
+.social-login.block ul li:last-of-type {
+    width: 200px;
+}
+.block ul li:first-of-type {
+    padding-bottom: 20px;
+}
+.block .facebook .btn-sm {
+    padding: 6px 12px;
+    font-size: 14px;
+    text-align: center;
+}
+.facebook .btn-sm {
+    padding: 5px 12px;
+    text-align: center;
+}
+.facebook>.btn:first-child {
+    background-color: #3f538c;
+}
+.facebook>.btn:last-of-type {
+    background-color: #415797;
+}
+.block .facebook>.btn:last-of-type {
+    padding: 5px 20px;
+}
+.block .twitter-plus>.btn-sm {
+    padding: 6px 12px;
+    font-size: 14px;
+}
+.twitter-plus>.btn-sm {
+    padding: 5px 12px;
+}
+.twitter-plus>.btn:first-child {
+    background-color: #38A1F3;
+}
+.twitter-plus>.btn:last-of-type {
+    background-color: #38A1F3;
+}
+.block .twitter-plus>.btn:last-of-type {
+    padding: 5px 20px;
+}
+
+
+.col-xs-12 {
+   
+}
 
 .footer {
   grid-area: hpartners;
@@ -118,58 +361,8 @@
 .clearfix {
   clear: both;
 }
-@media only screen and (min-width: 1280px) {
-  .contain {
-    width: 1200px;
-    margin: 0 auto;
-  }
-}
-@media only screen and (max-width: 1139px) {
-  .contain .social {
-    width: 1000px;
-    display: block;
-  }
-  .social h1 {
-    margin: 0px;
-  }
-}
-@media only screen and (max-width: 950px) {
-  .footer .col {
-    width: 33%;
-  }
-  .footer .col h1 {
-    font-size: 14px;
-  }
-  .footer .col ul li {
-    font-size: 13px;
-  }
-}
-@media only screen and (max-width: 500px) {
-    .footer .col {
-      width: 50%;
-    }
-    .footer .col h1 {
-      font-size: 14px;
-    }
-    .footer .col ul li {
-      font-size: 13px;
-    }
-}
-@media only screen and (max-width: 340px) {
-  .footer .col {
-    width: 100%;
-  }
-}
+
           
-
-
-
-
-
-
-
-
-
 
 
 *:focus {
@@ -345,3 +538,160 @@ footer {
     color: yellow;
     font-size: 45px;
 }
+
+#modal li {
+	list-style-type: none;
+}
+
+#modal label {
+	color:#000000;
+}
+
+
+/*START OF REGISTRATION FORM*/
+/* Add padding to containers */
+.homeregistration {
+  padding: 16px;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+}
+
+/* Set a style for the submit/register button */
+.registerbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity:1;
+}
+
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+            /*END OF REGISTRATION FORM*/
+
+/*START OF HOME PAGE MEDIA QUERY*/
+
+@media only screen and (min-width: 1281px) {
+  .contain {
+    width: 1200px;
+    margin: 0 auto;
+  }
+	
+}
+
+@media only screen and (max-width: 1280px) {
+  .contain .social {
+    width: 1000px;
+    display: block;
+  }
+	
+	h1 { 
+	font-size: 22px;
+	}
+	
+  .social h1 {
+    margin: 0px;
+  }
+	
+
+}
+
+@media only screen and (min-width: 1001px) {
+  
+    .grid-container {
+        grid-template-columns: 70% 30%;
+        grid-template-areas: 
+          "nav nav"
+		  "main aside"
+    }
+    
+}
+
+@media only screen and (max-width: 1000px) {
+  
+    #main > img, .titleContainer__2kdrhe6ZWYZpBOZ88grjVL {
+        display:none;
+    }
+    
+    .grid-container {
+        grid-template-columns: 100%;
+        grid-template-areas: 
+          "nav"
+		  "main"
+          "aside"
+    }
+    
+}
+
+@media only screen and (max-width: 950px) {
+  .footer .col {
+    width: 33%;
+  }
+  .footer .col h1 {
+    font-size: 14px;
+  }
+  .footer .col ul li {
+    font-size: 13px;
+  }
+    
+    #hide{
+        display: none;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .footer .col {
+      width: 50%;
+    }
+    .footer .col h1 {
+      font-size: 14px;
+    }
+    .footer .col ul li {
+      font-size: 13px;
+    }
+    
+    #hide{
+        display: none;
+    }
+}
+@media only screen and (max-width: 340px) {
+  .footer .col {
+    width: 100%;
+  }
+    
+    #hide{
+        display: none;
+    }
+}
+
+
