@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      
+      <link rel='icon' href='images/favicon.png' type='image/png'>
+
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+          <link rel="stylesheet" href="contactpagestyle.css">
+      
+      <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+    <title>Blockcademy</title>
+  </head>
+  <body>
+      
+        
+        <div class="grid">
+            
+            <div class="nav">
+                 <!--Navbar-->
+                  <nav class="w-100 navbar navbar-expand-sm navbar-light " >
+              <div>
+                      <a class="navbar-brand" href="#">
+    <img src="images/logo.png" width="60px" class="d-inline-block align-top" alt=""> </a>
+                  
+                 </div> 
+                      
+            <div id="hide">
+                 <a class="navbar-brand" href="#"> <img src="images/word.png" width="150px" class="d-inline-block align-top"  alt="">   
+                </a>
+                      </div>
+                      
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">
+                      Curriculum
+                    </a>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Forum</a>
+                  </li>
+                 <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Contact</a>
+                  </li>
+                </ul>
+              </div>
+                      <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target=".bd-example-modal-lg" >Login/Register</button>
+                      
+                      <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                      <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+<!-- THIS IS THE LOGIN-->
+                            
+      <div class="col-xs-12">
+        <div class="form-body">
+          <ul class="nav nav-tabs final-login">
+            <li id="login-tab" class="active head-login"><a data-toggle="tab" href="#login2">login</a></li>
+            <li id="register-tab" class="head-register"><a data-toggle="tab" href="#register2">register</a></li>
+          </ul>
+          <div class="tab-content">
+            <div id="login2" class="tab-pane active">
+              <div class="form-wrapper">
+                <form class="login" action="" method="post">
+                  <div class="form-group accaunt-name">
+    
+                    <input type="text" class="form-control" id="accauntName" placeholder="Your Email">
+                    <span class="fa fa-user"></span>
+                  </div>
+                  <!-- .form-group accaunt-name -->
+                  <div class="form-group accaunt-password">
+                    
+                    <input type="password" class="form-control" id="accauntPassword" placeholder="Create Your Password">
+                    <span class="fa fa-lock"></span>
+                  </div>
+                 
+                  <div class="checkbox checkbox-main">
+                    <input id="checkbox-login2" type="checkbox">
+                    <label for="checkbox-login2">
+				   Remember me
+								        </label>
+                  </div>
+                  <button type="submit" class="btn btn-lgn">Login</button>
+                  <span class="or text-center"><a href="#">Register | Lost your password?</a></span>
+                  <div class="clearfix"></div>
+                </form>
+              </div>
+              <div class="social-login">
+                <span class="text-center">Or login with</span>
+                  
+                  
+                <ul>
+                  <li class="btn-group split-left facebook">
+                   <link rel='icon' href='favicon.ico' type='image/x-icon'/ >
+                    <button type="button" class="btn btn-sm">Facebook</button>
+                  </li>
+                    
+                  <li class="btn-group split-left twitter-plus">
+                 
+                    <button type="button" class="btn btn-sm">Twitter</button>
+                  </li>
+                </ul>
+                  
+                  
+              </div>
+            </div>
+            <div id="register2" class="tab-pane fade">
+              <div class="form-wrapper">
+                <form class="register" method="post">
+                  <div class="form-group accaunt-name">
+                    
+                    <input type="text" class="form-control" id="accauntName" placeholder="Your Email">
+                    <span class="fa fa-user"></span>
+                  </div>
+                  <div class="form-group accaunt-email">
+                    
+                    <input type="email" class="form-control" id="accauntEmail" placeholder="Your Password">
+                    <span class="fa fa-envelope"></span>
+                  </div>
+                  <button type="submit" class="btn btn-rgstr">Register</button>
+                  <span class="or text-center"><a data-toggle="tab" href="#login">Log in | Lost your password?</a></span>
+                 
+                </form>
+              </div>
+              <div class="social-login">
+                <span class="text-center">Or connect with</span>
+                <ul>
+                  <li class="btn-group split-left facebook">
+                    <button type="button" class="btn btn-sm">
+				<i class="fa fa-facebook" aria-hidden="true"></i>
+										</button>
+                    <button type="button" class="btn btn-sm">Facebook</button>
+                  </li>
+                  <li class="btn-group split-left twitter-plus">
+                    <button type="button" class="btn btn-sm">
+				<i class="fa fa-twitter-plus" aria-hidden="true"></i>
+										</button>
+                    <button type="button" class="btn btn-sm">Twitter</button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="uparrow"></div>
+        </div>
+      </div>
+                            
+ <!--THIS IS THE END OF THE LOGIN-->           
+                            
+                            
+                        </div>
+                      </div>
+                    </div>
+
+            </nav>     
+    
+                
+      <!--/.Navbar--> 
+            </div>
+            
+            
+            
+            <div class="main">
+            
+                <div>
+                <h1 style="padding:30px 0 30px 10px; text-align: center">Hello, World!</h1>
+                </div>
+                
+              <div class="card-deck" style="padding: 30px">
+              <div class="card" >
+                <img class="card-img-top" src="images/profile/Elaine.jpeg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Elaine Ramirez</h5>
+                  <p class="cardtext">Journalist covering blockchain and entrepreneurship. Media entrepreneur-in-training.</p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted"><a href="https://www.linkedin.com/in/elaineramirez/" class="card-link">LinkedIn</a></small>
+                </div>
+              </div>
+              <div class="card">
+                <img class="card-img-top" src="images/profile/Olivia.jpeg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Olivia Obineme</h5>
+                  <p class="cardtext">Media Entrepreneur • Photographer • Storyteller</p>
+                    <p class="cardtext"> "I don't know what Blockchain is :D"</p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted"> <a href="https://www.linkedin.com/in/oliviaobineme/">LinkedIn</a></small>
+                </div>
+              </div>
+              <div class="card">
+                <img class="card-img-top" src="images/profile/Zoey.ipeg.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Zoey Ren</h5>
+                  <p class="cardtext">Digital Journalist • Marketing Allrounder • Tech Enthusiast</p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted"><a href="https://www.linkedin.com/in/zhaoqianren/">LinkedIn</a></small>
+                </div>
+              </div>
+            </div>
+            
+                 <div>
+                <h1 style="padding:30px 0 30px 10px; text-align: center">Contact Us</h1>
+                </div>
+                
+                 <div class="container">  
+                  <form id="contact" action="" method="post">
+                      
+                    <fieldset>
+                      <input placeholder="Your name" type="text" tabindex="1" required autofocus>
+                    </fieldset>
+                    <fieldset>
+                      <input placeholder="Your Email Address" type="email" tabindex="2" required>
+                    </fieldset>
+                    <fieldset>
+                      <input placeholder="Your Phone Number" type="tel" tabindex="3" required>
+                    </fieldset>
+                   
+                    <fieldset>
+                      <textarea placeholder="Type your Message Here...." tabindex="5" required></textarea>
+                    </fieldset>
+                    <fieldset>
+                      <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+                    </fieldset>
+                  </form>
+                </div>
+                
+            </div>
+            
+          
+      
+      
+            <div class="hlesson">
+                
+               
+                </div>
+            
+            <div class="hoverview">
+            
+            </div>
+            
+            
+            
+          
+
+                    <!-- FOOTER START -->
+                    <div class="footer">
+                      <div class="contain">
+                      <div class="col">
+                        <h1>Company</h1>
+                        <ul>
+                          <li>About</li>
+                          <li>Curriculum</li>
+                        
+                        </ul>
+                      </div>
+                 
+                      <div class="col">
+                        <h1>Resources</h1>
+                        <ul>
+                          <li>Forum</li>
+                          <li>Contact us</li>
+                        </ul>
+                      </div>
+                      <div class="col social">
+                        <h1>Social</h1>
+                        <ul>
+                          <li><img src="https://svgshare.com/i/5fq.svg" width="32" style="width: 32px;"></li>
+                          <li><img src="https://svgshare.com/i/5eA.svg" width="32" style="width: 32px;"></li>
+                        </ul>
+                      </div>
+                    <div class="clearfix"></div>
+                    </div>
+                    </div>
+                    <!-- END OF FOOTER -->
+                
+          </div>
+      
+    
+      
+      
+      
+      
+    <!-- THIS WAS IN THE ORIGINAL BLOCKCHAIN CODE I DOWNLOADED THAT WAS SHARED IN TRELLO--Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    
+    <script src="javascript.js"></script>
+ 
+    
+  </body>
+</html>
+
