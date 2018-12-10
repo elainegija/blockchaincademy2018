@@ -14,21 +14,22 @@
 }
         
             .grid > div{
-            padding: 1em;
+            
             }
 
+            
             .nav{
             grid-area: nav;
             vertical-align: inherit;
             font-family: 'Raleway', sans-serif;
-                
+            margin: 0;    
             }
             
            .main {
                 grid-area: main;
-             margin: 1em;   
+             margin: 1em;
             }
-            
+
 .component-row {
 	height: 200px;
 	text-align: center;

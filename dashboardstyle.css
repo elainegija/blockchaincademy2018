@@ -15,7 +15,7 @@
 }
         
             .grid > div{
-            margin: 1em;
+            
             }
 
             .nav{
@@ -37,7 +37,7 @@
             
             .hlesson {
                 grid-area: hlesson;
-                
+                margin: 1em;
             }
             
             .hoverview {
@@ -56,7 +56,7 @@
 }
 
 .progress {
-    height: 5em;
+    height: 4em;
     background-color: #fafafa;
     
     margin: .5em;
