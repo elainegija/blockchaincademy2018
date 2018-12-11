@@ -271,6 +271,7 @@ button {
     background-color: #ff764c !important;
     color: #fff;
     padding: 6px 60px !important;
+    margin-bottom:10px;
 }
 .or {
     display: block;
