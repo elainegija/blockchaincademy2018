@@ -36,7 +36,7 @@
             padding: 15px;
                 
             }
-            .hlesson {
+            #hlesson {
                 grid-area: hlesson;
             }
             
@@ -108,6 +108,10 @@
 .clearfix {
   clear: both;
 }
+
+
+
+
 @media only screen and (min-width: 1280px) {
   .contain {
     width: 1200px;
@@ -133,6 +137,10 @@
   .footer .col ul li {
     font-size: 13px;
   }
+    
+    #hide{
+        display: none;
+    }
 }
 @media only screen and (max-width: 500px) {
     .footer .col {
@@ -144,13 +152,20 @@
     .footer .col ul li {
       font-size: 13px;
     }
+    
+    #hide{
+        display: none;
+    }
 }
 @media only screen and (max-width: 340px) {
   .footer .col {
     width: 100%;
   }
+    
+    #hide{
+        display: none;
+    }
 }
-          
 
 
 
@@ -455,3 +470,10 @@ p {
 }
 
 
+.modal-body li {
+	list-style-type: none;
+}
+
+.modal label {
+	color:#000000;
+}
