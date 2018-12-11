@@ -1,0 +1,11 @@
+.form-control #photoupload {
+    height: 10em;
+}
+
+#editprofileform {
+    height: auto;
+}
+
+#formname {
+    text-align: left;
+}
